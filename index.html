@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX Request Tester</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <!-- request section  -->
+      <h1>AJAX Request (GET,POST)</h1>
+      <p class="p">You can also use others api URL...</p>
+
+      <div class="request">
+        <div class="request-field">
+          <label for="type">Select request type :</label>
+          <select id="select-req">
+            <option value="Ajax">Ajax</option>
+            <option value="jQuery">jQuery</option>
+            <option value="Axios">Axios</option>
+            <option value="Fetch">Fetch</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <p>URL :</p>
+          <input
+            type="text"
+            id="req-url"
+            name="url"
+            value="https://reqres.in/api/users/1"
+          />
+
+          <button id="btn">Send</button>
+        </div>
+      </div>
+
+      <!-- response view section  -->
+
+      <div class="total-response">
+        <div class="response">
+          <h2>Response Text :</h2>
+          <p id="response-output"></p>
+        </div>
+        <div class="response-status">
+          <div class="s">
+            <h3>Status :</h3>
+            <p id="status"></p>
+          </div>
+          <div class="rt">
+            <h3>Response Type :</h3>
+            <p id="type"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- response data view section  -->
+
+      <!-- <h2>Response Data View...</h2>
+
+    <div class="response-data">
+      <h3 id="data-id"></h3>
+      <img src="" alt="image" id="image" />
+      <p id="name"></p>
+    </div> -->
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

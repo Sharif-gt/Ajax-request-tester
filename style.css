@@ -1,0 +1,106 @@
+* {
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  background-color: rgba(49, 41, 31, 0.663);
+  color: #0000;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+
+h1 {
+  padding: 15px;
+}
+.p {
+  border: 1px solid;
+  border-style: none;
+  background-color: coral;
+  padding: 5px;
+}
+
+.request {
+  text-align: left;
+  margin-block: 10px;
+  font-size: large;
+}
+
+.request-field {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  display: flex;
+  gap: 10px;
+  margin-block: 10px;
+}
+
+#req-url {
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#btn {
+  background-color: darkgreen;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#btn:hover {
+  background-color: rgba(4, 78, 4, 0.718);
+}
+
+.total-response {
+  width: 100%;
+}
+
+.response h2 {
+  background-color: darkolivegreen;
+  margin-block: 20px;
+  padding-block: 10px;
+}
+
+.response p {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.response-status {
+  display: flex;
+  gap: 10px;
+}
+
+.s,
+.rt {
+  background-color: darkolivegreen;
+  padding: 10px;
+  width: 50%;
+}
+
+#status {
+  background-color: rgb(0, 242, 255);
+  color: black;
+  padding: 10px;
+}
+
+#type {
+  background-color: rgb(0, 242, 255);
+  color: black;
+  padding: 10px;
+}
